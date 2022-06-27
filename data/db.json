@@ -1,0 +1,28 @@
+{
+    "manga": [
+      {
+        "title": "Attack on titan",
+        "otherNames" : ["attack","shingeki no kyojin","هجوم العملاقة"],
+        "story": "a guy that turn into titan",
+        "translator": "rody",
+        "poster": "https://m.media-amazon.com/images/I/81dH7-pkjiL._AC_SY679_.jpg",
+        "chapters":20,
+        "censored": false,
+        "author": "isa",
+        "generes" : ["shonin ","mysteri "],
+        "id": 1
+      },
+      {
+        "title": "Tokyo Ghoul",
+        "otherNames" : ["tokyo"," توكيو غول"],
+        "story": "a guy that turn into Ghoul",
+        "translator": "hyp3",
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2E2OTgzODktMjBhYy00MjJjLWI0OTgtNGYxOGNhMWMxOWE4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+        "chapters":30,
+        "censored": true,
+        "author": "sui",
+        "generes" : ["sinen ","action "],
+        "id": 2
+      }
+    ]
+  }
