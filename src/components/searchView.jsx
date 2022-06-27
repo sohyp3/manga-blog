@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
+import MangaCard from "./mangaCard";
 
-import searchIcon from "../icons/search.svg";
 
 const SearchView = () => {
 
@@ -12,9 +12,7 @@ const SearchView = () => {
     const searchHandler = (e)=>{
         setSearchBar(e.target.value)
 
-        console.log(searchResult)
-
-        // let found = mangas.map((manga)=>(manga.title.find(e => e == searchBar)))
+    // half working search function or its a feature not a bug
         mangas.forEach(manga =>{
             let found = false;
             manga.otherNames.forEach(othername =>{
@@ -31,13 +29,8 @@ const SearchView = () => {
                     manga
                 ]);
             }
-            
         })
-        
     }
-
-
-
 
     return ( 
             <div className="all-view">
@@ -47,18 +40,23 @@ const SearchView = () => {
                         value={searchBar}
                         onChange={searchHandler}
                     />
-                    {/* <img 
-                    src={searchIcon}
-                    alt='search'
-                    // onClick={searchHandler}
-                    /> */}
-
                 </div>
-                    <h1></h1>
-
+                
+                {error && <div className="center"> {error}</div>}
+                {isLoading && <div className="center">Loading... </div>}
+                
+                    {
+                        <div className="container"> 
+                        {
+                            searchResult.map((result) => (
+                                <MangaCard manga={result} />
+                            ))
+                        }
+                        </div>
+                    }
             </div>
         
         );
-}
+    }
  
 export default SearchView;

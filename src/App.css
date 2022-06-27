@@ -12,7 +12,8 @@
 *{
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #f9d3b4;
+  background-color: #333;
 }
 
 /* NavBar */
@@ -22,7 +23,7 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #633b3b;
+  border-bottom: 1px solid rgb(30, 153, 137);
 }
 .navbar h1{
   color: rgb(30, 153, 137);
@@ -51,7 +52,8 @@
 .container {
   width: 100%;
   margin-top: 3rem;
-
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +110,8 @@
   letter-spacing: 2px;
   font-weight: 500;
   color: #f0f0f0;
+  background-color: transparent;	
+
 }
 
 .manga div:nth-of-type(2) h3 {
@@ -115,6 +119,8 @@
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   color: #f9d3b4;
+  background-color: transparent;	
+
 }
 
 .manga:hover div:nth-of-type(1) {
@@ -126,3 +132,18 @@
   background-color: transparent;
 }
 
+.search{
+  max-width: 400px;
+  margin: 2% auto;
+  text-align: center;
+
+}
+
+.search input {
+  padding: 3% 5.5%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #a1a1a1;
+  background: #1f2123;
+}
