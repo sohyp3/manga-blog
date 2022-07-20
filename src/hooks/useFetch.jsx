@@ -14,6 +14,7 @@ const useFetch = (url) => {
             throw Error("Could not get the data")
         }
         return res.json();
+
     })
     .then(dataa=>{
         setData(dataa);

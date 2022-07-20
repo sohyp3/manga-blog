@@ -15,11 +15,12 @@ const SearchView = () => {
     // half working search function or its a feature not a bug
         mangas.forEach(manga =>{
             let found = false;
-            manga.otherNames.forEach(othername =>{
-                if (othername.toLowerCase().includes(searchBar)){
-                    found = true;
-                }
-            })
+            // manga.otherNames.forEach(othername =>{
+            //     if (othername.toLowerCase().includes(searchBar)){
+            //         found = true;
+            //     }
+            // })
+
             if (manga.title.toLowerCase().includes(searchBar)){
                 found= true
             }

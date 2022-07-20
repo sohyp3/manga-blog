@@ -2,7 +2,7 @@
     "manga": [
       {
         "title": "Attack on titan",
-        "otherNames" : ["attack","shingeki no kyojin","هجوم العملاقة"],
+        "otherNames" : "attack , shingeki no kyojin , هجوم العملاقة",
         "story": "a guy that turn into titan",
         "translator": "rody",
         "poster": "https://m.media-amazon.com/images/I/81dH7-pkjiL._AC_SY679_.jpg",
